@@ -1,3 +1,4 @@
+/** just a class for a black background **/
 .bg-black {
   background: #000;
   color: #fff; }
@@ -5,18 +6,19 @@
 body {
   background-color: #353942; }
 
-#main-header img {
-  width: 100%;
-  height: 100%; }
-
-#main-header .port-item {
-  width: 33.33333%; }
-  #main-header .port-item .fa {
-    font-size: 2em; }
-
-#main-header .port-item:hover {
-  opacity: 0.8;
-  cursor: pointer; }
+/** fix image size - still doesn't work right with tall images **/
+#main-header {
+  /** home resume and contact are all port items **/ }
+  #main-header img {
+    width: 100%;
+    height: 100%; }
+  #main-header .port-item {
+    width: 33.33333%; }
+    #main-header .port-item .fa {
+      font-size: 2em; }
+  #main-header .port-item:hover {
+    opacity: 0.8;
+    cursor: pointer; }
 
 /* making sure it doesn't bust port items on big screens */
 @media (min-width: 1199px) {
